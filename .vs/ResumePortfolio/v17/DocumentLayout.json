@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ResumePortfolio\\ResumePortfolio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|C:\\ResumePortfolio\\ResumePortfolio\\resumeportfolio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|solutionrelative:resumeportfolio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|C:\\ResumePortfolio\\ResumePortfolio\\resumeportfolio\\views\\home\\projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|solutionrelative:resumeportfolio\\views\\home\\projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|C:\\ResumePortfolio\\ResumePortfolio\\resumeportfolio\\content\\projects.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|solutionrelative:resumeportfolio\\content\\projects.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|c:\\resumeportfolio\\resumeportfolio\\resumeportfolio\\content\\technologies.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|solutionrelative:resumeportfolio\\content\\technologies.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|c:\\resumeportfolio\\resumeportfolio\\resumeportfolio\\views\\home\\skills.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|solutionrelative:resumeportfolio\\views\\home\\skills.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|c:\\resumeportfolio\\resumeportfolio\\resumeportfolio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|solutionrelative:resumeportfolio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|C:\\ResumePortfolio\\ResumePortfolio\\resumeportfolio\\scripts\\skills.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|solutionrelative:resumeportfolio\\scripts\\skills.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|C:\\ResumePortfolio\\ResumePortfolio\\resumeportfolio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|solutionrelative:resumeportfolio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|c:\\resumeportfolio\\resumeportfolio\\resumeportfolio\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{222A9EE7-CD56-460C-B1C9-C2B88953611B}|ResumePortfolio\\ResumePortfolio.csproj|solutionrelative:resumeportfolio\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Technologies.css",
+              "DocumentMoniker": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Content\\Technologies.css",
+              "RelativeDocumentMoniker": "ResumePortfolio\\Content\\Technologies.css",
+              "ToolTip": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Content\\Technologies.css",
+              "RelativeToolTip": "ResumePortfolio\\Content\\Technologies.css",
+              "ViewState": "AQIAACwAAAAAAAAAAADwvz8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-23T18:35:00.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Skills.cshtml",
+              "DocumentMoniker": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Views\\Home\\Skills.cshtml",
+              "RelativeDocumentMoniker": "ResumePortfolio\\Views\\Home\\Skills.cshtml",
+              "ToolTip": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Views\\Home\\Skills.cshtml",
+              "RelativeToolTip": "ResumePortfolio\\Views\\Home\\Skills.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-23T18:25:43.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ResumePortfolio\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ResumePortfolio\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T18:05:17.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Skills.js",
+              "DocumentMoniker": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Scripts\\Skills.js",
+              "RelativeDocumentMoniker": "ResumePortfolio\\Scripts\\Skills.js",
+              "ToolTip": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Scripts\\Skills.js",
+              "RelativeToolTip": "ResumePortfolio\\Scripts\\Skills.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-15T20:23:09.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Projects.css",
+              "DocumentMoniker": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Content\\Projects.css",
+              "RelativeDocumentMoniker": "ResumePortfolio\\Content\\Projects.css",
+              "ToolTip": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Content\\Projects.css",
+              "RelativeToolTip": "ResumePortfolio\\Content\\Projects.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-14T22:58:11.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "ResumePortfolio\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "ResumePortfolio\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T22:47:48.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ResumePortfolio\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ResumePortfolio\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T18:24:05.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ResumePortfolio\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ResumePortfolio\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAADcAAAAAAAAAAAAiwDsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T18:09:46.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Projects.cshtml",
+              "DocumentMoniker": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Views\\Home\\Projects.cshtml",
+              "RelativeDocumentMoniker": "ResumePortfolio\\Views\\Home\\Projects.cshtml",
+              "ToolTip": "C:\\ResumePortfolio\\ResumePortfolio\\ResumePortfolio\\Views\\Home\\Projects.cshtml",
+              "RelativeToolTip": "ResumePortfolio\\Views\\Home\\Projects.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T23:43:37.107Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
