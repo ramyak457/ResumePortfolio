@@ -1,5 +1,5 @@
 ﻿.rectangle0 {
-    position: absolute;
+    position: fixed;
     width: 190px;
     height: 100px;
     background-color: black;
@@ -9,7 +9,7 @@
 }
 
 .diamond0 {
-    position: absolute;
+    position: fixed;
     width: 50px;
     height: 50px;
     background-color: red;
@@ -20,8 +20,8 @@
     opacity: 0.8;
 }
 
-.rectangle1{
-    position: absolute;
+.rectangle1 {
+    position: fixed;
     width: 190px;
     height: 100px;
     background-color: black;
@@ -30,8 +30,8 @@
     opacity: 0.4;
 }
 
-.diamond1{
-    position: absolute;
+.diamond1 {
+    position: fixed;
     width: 50px;
     height: 50px;
     background-color: red;
@@ -43,7 +43,7 @@
 }
 
 .rectangle2 {
-    position: absolute;
+    position: fixed;
     width: 190px;
     height: 100px;
     background-color: black;
@@ -53,7 +53,7 @@
 }
 
 .diamond2 {
-    position: absolute;
+    position: fixed;
     width: 50px;
     height: 50px;
     background-color: red;
@@ -64,7 +64,7 @@
     opacity: 0.8;
 }
 .rectangle3 {
-    position: absolute;
+    position: fixed;
     width: 190px;
     height: 100px;
     background-color: black;
@@ -74,7 +74,7 @@
 }
 
 .diamond3 {
-    position: absolute;
+    position: fixed;
     width: 50px;
     height: 50px;
     background-color: red;
@@ -85,7 +85,7 @@
     opacity: 0.8;
 }
 .rectangle4 {
-    position: absolute;
+    position: fixed;
     width: 190px;
     height: 100px;
     background-color: black;
@@ -95,7 +95,7 @@
 }
 
 .diamond4 {
-    position: absolute;
+    position: fixed;
     width: 50px;
     height: 50px;
     background-color: red;
@@ -107,7 +107,7 @@
 }
 
 .rectangle5 {
-    position: absolute;
+    position: fixed;
     width: 190px;
     height: 100px;
     background-color: black;
@@ -117,7 +117,7 @@
 }
 
 .diamond5 {
-    position: absolute;
+    position: fixed;
     width: 50px;
     height: 50px;
     background-color: red;
@@ -128,7 +128,7 @@
     opacity: 0.8;
 }
 .rectangle6 {
-    position: absolute;
+    position: fixed;
     width: 190px;
     height: 100px;
     background-color: black;
@@ -138,7 +138,7 @@
 }
 
 .diamond6 {
-    position: absolute;
+    position: fixed;
     width: 50px;
     height: 50px;
     background-color: red;
@@ -149,7 +149,7 @@
     opacity: 0.8;
 }
 .rectangle7 {
-    position: absolute;
+    position: fixed;
     width: 190px;
     height: 100px;
     background-color: black;
@@ -159,7 +159,7 @@
 }
 
 .diamond7 {
-    position: absolute;
+    position: fixed;
     width: 50px;
     height: 50px;
     background-color: red;
