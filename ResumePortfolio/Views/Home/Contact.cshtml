@@ -1,5 +1,6 @@
 ﻿@{
-    ViewBag.Title = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <html>
 <head>
@@ -8,15 +9,20 @@
             background-color: black;
             font-family: Arial, Helvetica, sans-serif;
         }
-        *{box-sizing:border-box;}
-        .cont{
-            border-radius: 5px;
-            padding-left:100px;
-            margin-right:300px;
-            margin-left:100px;
-            margin-top:20px;
+
+        * {
+            box-sizing: border-box;
         }
-        input[type=text],textarea {
+
+        .cont {
+            border-radius: 5px;
+            padding-left: 100px;
+            margin-right: 300px;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+
+        input[type=text], textarea {
             width: 100%;
             padding: 12px;
             border: 1px solid #ccc;
@@ -27,38 +33,35 @@
             resize: vertical;
             display: block;
         }
-        .modal {
-            position: absolute; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            width: 15%;
+        .alert  {
+            padding: 20px;
+            background-color: #04AA6D;
+            color: white;
+        }
+        .alert.error {
+            background-color: #f44336;
         }
 
-        /* Modal Content/Box */
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto;  /*15% from the top and centered */
-            padding-left: 10px;
-            border: 1px solid #888;
-            /*width: 80%;*/ /* Could be more or less, depending on screen size */
-        }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
+        .closebtn {
+            margin-left: 15px;
+            color: white;
             font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
         }
-            .close:hover,
-            .close:focus {
-                color: black;
-                text-decoration: none;
-                cursor: pointer;
-            }     
+        .closebtn:hover {
+            color: black;
+        }
+               
     </style>
 </head>
 <body>
     <div class="cont">
-        <form action="#">
+        @using (Html.BeginForm())
+        {
             <label style="color:white">First Name<span style="color:red">*</span></label>
             <input type="text" name="firstname" placeholder="Your name..">
 
@@ -69,16 +72,10 @@
             <input type="text" name="email" placeholder="xyz@gmail.com">
 
             <label style="color:white">Subject</label>
-            <textarea name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea name="body" placeholder="Write something.." style="height:200px"></textarea>
 
             <button id="myBtn">Submit</button>
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Message sent successfully..</p>
-                </div>
-            </div>
-        </form>
+        }
     </div>
     <div style="position:absolute; top:180px; right:250px">
         <h1><span style="font-size:larger; color:white">CONTACT</span></h1>
@@ -92,26 +89,19 @@
     <div style="position:absolute; top:360px; right:250px">
         <span style="color: white; font-size:large">ramya04.kumar@gmail.com   </span><img src="~/Images/Mail.jpg" width="30px" height="30px" />
     </div>
-    <script>
-        var modal = document.getElementById("myModal");
-
-        var btn = document.getElementById("myBtn");
-
-        var span = document.getElementsByClassName("close")[0];
-
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    @if (ViewData["success"] != null)
+     {
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>@ViewData["success"]</strong> 
+        </div>
+     }
+     else if (ViewData["error"] != null)
+     {
+        <div class="alert error">
+           <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+           <strong>@ViewData["error"]</strong>
+        </div>
+     }
 </body>
 </html>
