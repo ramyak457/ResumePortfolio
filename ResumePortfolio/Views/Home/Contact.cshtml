@@ -2,24 +2,23 @@
     ViewBag.Title = "Contact";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             background-color: black;
             font-family: Arial, Helvetica, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
+            color: white;
         }
 
         .cont {
+            background-color: #333;
             border-radius: 5px;
-            padding-left: 100px;
-            margin-right: 300px;
-            margin-left: 100px;
-            margin-top: 20px;
+            padding: 20px;
+            margin: 20px;
         }
 
         input[type=text], textarea {
@@ -33,14 +32,17 @@
             resize: vertical;
             display: block;
         }
-        .alert  {
+
+        .alert {
             padding: 20px;
             background-color: #04AA6D;
             color: white;
+            margin-top: 20px;
         }
-        .alert.error {
-            background-color: #f44336;
-        }
+
+            .alert.error {
+                background-color: #f44336;
+            }
 
         .closebtn {
             margin-left: 15px;
@@ -52,56 +54,78 @@
             cursor: pointer;
             transition: 0.3s;
         }
-        .closebtn:hover {
-            color: black;
+
+            .closebtn:hover {
+                color: black;
+            }
+
+        .contact-info {
+            margin-top: 40px;
         }
-               
+
+            .contact-info img {
+                margin-left: 10px;
+            }
+
+        @@media (max-width: 600px) {
+            .contact-info {
+                text-align: center;
+            }
+
+                .contact-info h1 {
+                    font-size: 1.5rem;
+                }
+        }
     </style>
 </head>
 <body>
-    <div class="cont">
-        @using (Html.BeginForm())
-        {
-            <label style="color:white">First Name<span style="color:red">*</span></label>
-            <input type="text" name="firstname" placeholder="Your name..">
+    <div class="container">
+        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12">
+            <div class="cont">
+                <h1 style="text-align:center">CONTACT ME</h1>
+                <p id="ele1"> <img src=" ~/Images/Call.jpg " width="30px" height="30px" /> +1(604)2039314 </p>
+                <p id="ele2"> <img src=" ~/Images/Mail.jpg" width="30px" height="30px" /> ramya04.kumar@gmail.com </p>
+                @using (Html.BeginForm())
+                {
+                    <div class="form-group">
+                        <label for="firstname">First Name<span style="color:red">*</span></label>
+                        <input type="text" name="firstname" class="form-control" placeholder="Your name..">
+                    </div>
 
-            <label style="color:white">Last Name<span style="color:red">*</span></label>
-            <input type="text" name="lastname" placeholder="Your last name..">
+                    <div class="form-group">
+                        <label for="lastname">Last Name<span style="color:red">*</span></label>
+                        <input type="text" name="lastname" class="form-control" placeholder="Your last name..">
+                    </div>
 
-            <label style="color:white">Email<span style="color:red">*</span></label>
-            <input type="text" name="email" placeholder="xyz@gmail.com">
+                    <div class="form-group">
+                        <label for="email">Email<span style="color:red">*</span></label>
+                        <input type="text" name="email" class="form-control" placeholder="xyz@gmail.com">
+                    </div>
 
-            <label style="color:white">Subject</label>
-            <textarea name="body" placeholder="Write something.." style="height:200px"></textarea>
+                    <div class="form-group">
+                        <label for="body">Subject</label>
+                        <textarea name="body" class="form-control" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
 
-            <button id="myBtn">Submit</button>
-        }
-    </div>
-    <div style="position:absolute; top:180px; right:250px">
-        <h1><span style="font-size:larger; color:white">CONTACT</span></h1>
-    </div>
-    <div style="position:absolute; top:250px; right:240px">
-        <h1><span style="font-size:larger; color:white">ME</span></h1>
-    </div>
-    <div style="position:absolute; top:320px; right:250px">
-        <span style="color: white; font-size:large">+1(604)203-9314   </span><img src="~/Images/Call.jpg" width="30px" height="30px" />
-    </div>
-    <div style="position:absolute; top:360px; right:250px">
-        <span style="color: white; font-size:large">ramya04.kumar@gmail.com   </span><img src="~/Images/Mail.jpg" width="30px" height="30px" />
-    </div>
-    @if (ViewData["success"] != null)
-     {
-        <div class="alert">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            <strong>@ViewData["success"]</strong> 
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                }
+            </div>
+            @if (ViewData["success"] != null)
+            {
+                <div class="alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <strong>@ViewData["success"]</strong>
+                </div>
+            }
+            else if (ViewData["error"] != null)
+            {
+                <div class="alert error">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <strong>@ViewData["error"]</strong>
+                </div>
+            }
         </div>
-     }
-     else if (ViewData["error"] != null)
-     {
-        <div class="alert error">
-           <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-           <strong>@ViewData["error"]</strong>
-        </div>
-     }
+    </div>
+    </div>
 </body>
 </html>

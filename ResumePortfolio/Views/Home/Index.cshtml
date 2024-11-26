@@ -1,79 +1,98 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <!DOCTYPE html>
+<html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
     <style>
-        }
-
-        .body {
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
-            height:100px;
-            background-color: dimgrey;
-            overflow:hidden;
+            background-color: whitesmoke;
+            overflow-x: hidden;
         }
 
-        .left-column {
-            float: left;
-            width: 55%; /* Adjust width as needed */
-            margin-right: 5%; /* Add some space between columns */
-            margin-top: 5%;
-        }
-
-        .right-column {
-            float: left;
-            width: 30%; /* Adjust width as needed */
-            height: 30%;
-        }
-        .btn {
-            height: 150px;
-            width: 150px;
+        .btn-custom {
+            height: 100px;
+            width: 80px;
             border-radius: 50%;
-            background-color: #007bff;
+            background-color: black;
             border-color: black;
-            text-align:center;
+            text-align: center;
+            margin: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.4;
         }
-        .btn:hover {
-            background-color: #0056b3;
-        }
+
+            .btn-custom:hover {
+                background-color: gray;
+            }
+
         .avatar {
             border-radius: 50%;
             object-fit: cover;
-            width: 300px;
+            width: 100%;
+            max-width: 300px;
             height: 300px;
+            margin: auto;
         }
+
         .footer {
-            position:absolute;
+            position: fixed;
             bottom: 0;
             width: 100%;
-            height: 10%;
             background-color: palevioletred;
             color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
-        p {text-align:justify}
+
+            .footer img {
+                max-width: 20px;
+                max-height: 20px;
+            }
+
+            .footer span {
+                color: bisque;
+            }
+
+        #aboutme {
+            text-align: justify;
+            font-size: large;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="left-column">
-            <h1>Hello,</h1>
-            <h3>a bit about me:</h3>
-            <button class="btn" onclick="window.location = '/Images/Resume.pdf';"><span style="font-family: Arial, Helvetica, sans-serif; color: bisque;">Resume</span></button>
-            <button class="btn" onclick="window.location = '/Home/Skills';"><span style="font-family: Arial, Helvetica, sans-serif; color: bisque;">Skills</span></button>
-            <button class="btn" onclick="window.location = '/Home/Projects';"><span style="font-family: Arial, Helvetica, sans-serif; color: bisque;">Projects</span></button>
-            <p>Hi, My name is Ramya. I'm a Full Stack Software Developer with five years of hands-on experience in C# and .NET technology. I have expertise across the entire Software Development Life Cycle (SDLC), consistently adhering to SAFE Agile principles. My role extends beyond mere coding, encompassing active participation in requirement discussions with clients and project managers. Proficient in analyzing project requirements, I excel in breaking down tasks into manageable user stories, estimating story points, and determining feature sizes. My versatility spans various domains, including pharmacy and finance sectors, where I've delivered robust solutions tailored to specific industry needs. Additionally, I possess knowledge of AWS S3 data syncing processes, adding another layer of proficiency to my skill set.</p{text-align:}>
-        </div>
-        <div class="right-column">
-            <img class="avatar" src="~/Images/DP.jpg" style="margin:50px" />
+        <div class="row">
+            <div class="col-lg-8 col-md-7 col-sm-12">
+                <h1>Hello,</h1>
+                <h3>a bit about me:</h3>
+                <div class="d-flex flex-wrap">
+                    <button class="btn btn-custom" onclick="window.location = '/Images/Resume.pdf';">Resume</button>
+                    <button class="btn btn-custom" onclick="window.location = '/Home/Skills';">Skills</button>
+                    <button class="btn btn-custom" onclick="window.location = '/Home/Projects';">Projects</button>
+                </div>
+                <p id="aboutme">Hi, My name is Ramya. I'm a Full Stack Software Developer with five years of hands-on experience in C# and .NET technology. I have expertise across the entire Software Development Life Cycle (SDLC), consistently adhering to SAFE Agile principles. My role extends beyond mere coding, encompassing active participation in requirement discussions with clients and project managers. Proficient in analyzing project requirements, I excel in breaking down tasks into manageable user stories, estimating story points, and determining feature sizes. My versatility spans various domains, including pharmacy and finance sectors, where I've delivered robust solutions tailored to specific industry needs. Additionally, I possess knowledge of AWS S3 data syncing processes, adding another layer of proficiency to my skill set.</p>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-12 text-center">
+                <img class="avatar" src="~/Images/DP.jpg" />
+            </div>
         </div>
     </div>
     <div class="footer">
-        <a href="tel:+16042039314"><img src="~/Images/Call.jpg" width="50px" height="50px" style="position:absolute; top:10px; left:50px" /></a>
-        <span style="color: bisque; position: absolute; top: 12px; left: 120px;">+1(604)203-9314</span>
-        <a href="mailto:ramya04.kumar@gmail.com"><img src="~/Images/Mail.jpg" width="50px" height="50px" style="position:absolute; top:10px; left:300px"/> </a>
-        <span style="color: bisque; position: absolute; top:12px; left: 370px;">ramya04.kumar@gmail.com</span>
-        <a href="https://github.com/ramyak457" target="_blank"><img src="~/Images/GitHub.jpg" width="50px" height="50px" style="position:absolute; top:10px; left:630px;"/> </a>
-        <span style="color: bisque; position: absolute; top: 12px; left: 700px;">ramyak457</span>
+        <a href="tel:+16042039314"><img src="~/Images/Call.jpg" /> <span>+1(604)203-9314</span></a>
+
+        <a href="mailto:ramya04.kumar@gmail.com"><img src="~/Images/Mail.jpg" /><span>ramya04.kumar@gmail.com</span></a>
+
+        <a href="https://github.com/ramyak457" target="_blank"><img src="~/Images/GitHub.jpg" /><span>ramyak457</span></a>
     </div>
 </body>
+</html>

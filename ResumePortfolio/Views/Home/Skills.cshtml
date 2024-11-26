@@ -3,15 +3,76 @@
 }
 
 <!DOCTYPE html>
-
 <html>
 <head>
-    @Styles.Render("~/Content/Skills.css")
     @Styles.Render("~/Content/Technologies.css")
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .modal-content {
+            color: black;
+        }
+
+        .skills {
+            text-align: right;
+            padding: 10px;
+            color: white;
+        }
+
+        .highcode {
+            width: 100%;
+            background-color: #04AA6D;
+        }
+
+        .mediumcode {
+            width: 80%;
+            background-color: #2196F3;
+        }
+
+        .lowcode {
+            width: 60%;
+            background-color: #f44336;
+        }
+
+        .rectangle {
+            background-color: #555;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .diamond {
+            display: inline-block;
+            transform: rotate(45deg);
+            background-color: #555;
+            width: 30px;
+            height: 30px;
+            margin-top: 10px;
+        }
+
+        @@media (max-width: 768px) {
+            .rectangle {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            .diamond {
+                margin-top: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Modal Templates -->
     <div id="myModalFrontend" class="modal">
-        <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times</span>
             <h1>FrontEnd</h1>
@@ -19,20 +80,18 @@
             <div class="container">
                 <div class="skills highcode">100%</div>
             </div>
-
             <p>CSS</p>
             <div class="container">
                 <div class="skills mediumcode">80%</div>
             </div>
-
             <p>JavaScript</p>
             <div class="container">
                 <div class="skills lowcode">75%</div>
             </div>
         </div>
     </div>
+
     <div id="myModalDatabase" class="modal">
-        <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times</span>
             <h1>Database</h1>
@@ -40,36 +99,33 @@
             <div class="container">
                 <div class="skills highcode">90%</div>
             </div>
-
             <p>ElasticSearch</p>
             <div class="container">
                 <div class="skills mediumcode">80%</div>
             </div>
-
             <p>AWS S3</p>
             <div class="container">
                 <div class="skills lowcode">65%</div>
             </div>
-
             <p>Splunk</p>
             <div class="container">
-                <div class="skills lowcode">60%</div>
+                <div class="skills lowcode">70%</div>
             </div>
         </div>
     </div>
+
     <div id="myModalCloud" class="modal">
-        <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times</span>
             <h1>Cloud</h1>
             <p>AWS</p>
             <div class="container">
-                <div class="skills lowcode">60%</div>
+                <div class="skills highcode">60%</div>
             </div>
         </div>
     </div>
+
     <div id="myModalFramework" class="modal">
-        <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times</span>
             <h1>Languages & Framework</h1>
@@ -77,11 +133,11 @@
             <div class="container">
                 <div class="skills highcode">100%</div>
             </div>
-            <p>ASP.NET MVC</p>
+            <p>ASP.Net MVC</p>
             <div class="container">
                 <div class="skills mediumcode">90%</div>
             </div>
-            <p>Rest API</p>
+            <p>REST API</p>
             <div class="container">
                 <div class="skills lowcode">90%</div>
             </div>
@@ -95,8 +151,8 @@
             </div>
         </div>
     </div>
+
     <div id="myModalTools" class="modal">
-        <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times</span>
             <h1>Tools</h1>
@@ -122,8 +178,8 @@
             </div>
         </div>
     </div>
+
     <div id="myModalDeployment" class="modal">
-        <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times</span>
             <h1>Deployment</h1>
@@ -141,8 +197,8 @@
             </div>
         </div>
     </div>
+
     <div id="myModalMethodologies" class="modal">
-        <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times</span>
             <h1>Agile/Scrum</h1>
@@ -156,12 +212,12 @@
             </div>
         </div>
     </div>
+
     <div id="myModalVersionCtrl" class="modal">
-        <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times</span>
             <h1>Version Control</h1>
-            <p>Git</p>
+            <p>GIT</p>
             <div class="container">
                 <div class="skills highcode">100%</div>
             </div>
@@ -171,42 +227,83 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <h2 style="margin-left:500px; margin-top:30px"><span style="color:blue">My </span>Skills</h2>
-        <div class="rectangle0" style="color:white; font-size:larger;" onclick="openModal1()">
-            <span style="position: absolute; bottom: 10px; width: 100%; text-align:center">FrontEnd Technologies</span>
+
+    <div class="container text-center">
+        <h2 class="my-4"><span style="color:blue">My </span>Skills</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="rectangle" onclick="openModal('myModalFrontend')">
+                    FrontEnd Technologies
+                </div>
+                <div class="diamond"></div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="rectangle" onclick="openModal('myModalCloud')">
+                    Cloud Technologies
+                </div>
+                <div class="diamond"></div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="rectangle" onclick="openModal('myModalDatabase')">
+                    Database
+                </div>
+                <div class="diamond"></div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="rectangle" onclick="openModal('myModalFramework')">
+                    Framework
+                </div>
+                <div class="diamond"></div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="rectangle" onclick="openModal('myModalTools')">
+                    Tools
+                </div>
+                <div class="diamond"></div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="rectangle" onclick="openModal('myModalDeployment')">
+                    Deployment
+                </div>
+                <div class="diamond"></div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="rectangle" onclick="openModal('myModalMethodologies')">
+                    Methodologies
+                </div>
+                <div class="diamond"></div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="rectangle" onclick="openModal('myModalVersionCtrl')">
+                    Version Control
+                </div>
+                <div class="diamond"></div>
+            </div>
         </div>
-        <div class="diamond0"></div>
-        <div class="rectangle1" style="color: white; font-size: larger" onclick="openModal2()">
-            <span style="position: absolute; bottom: 10px; width: 100%; text-align:center"> Cloud Technologies </span>
-        </div>
-        <div class="diamond1"></div>
-        <div class="rectangle2" style="font-family: Arial; color: white; font-size: larger" onclick="openModal3()">
-            <span style='position: absolute; bottom: 10px; width: 100%; text-align: center'>Database</span>
-        </div>
-        <div class="diamond2"></div>
-        <div class="rectangle3" style="font-family: Arial; color: white; font-size: larger" onclick="openModal4()">
-            <span style='position:absolute; bottom:10px; width:100%;text-align:center'>Languages & Framework</span>
-        </div>
-        <div class="diamond3"></div>
-        <div class="rectangle4" style="font-family: Arial; color: white; font-size: larger" onclick="openModal5()">
-            <span style='position:absolute; bottom:10px; width:100%;text-align:center'>Tools</span>
-        </div>
-        <div class="diamond4"></div>
-        <div class="rectangle5" style="font-family: Arial; color: white; font-size: larger" onclick="openModal6()">
-            <span style='position:absolute; bottom:10px; width:100%;text-align:center'>Deployment</span>
-        </div>
-        <div class="diamond5"></div>
-        <div class="rectangle6" style="font-family: Arial; color: white; font-size: larger" onclick="openModal7()">
-            <span style='position:absolute; bottom:10px; width:100%;text-align:center'>Methodologies</span>
-        </div>
-        <div class="diamond6"></div>
-        <div class="rectangle7" style="font-family: Arial; color: white; font-size: larger" onclick="openModal8()">
-            <span style='position:absolute; bottom:10px; width:100%;text-align:center'>Version Control</span>
-        </div>
-        <div class="diamond7"></div>
     </div>
 
-    <script src="~/Scripts/Skills.js"></script>
+    <script>
+        function openModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";
+        }
+
+        var closeButtons = document.getElementsByClassName("close");
+        for (var i = 0; i < closeButtons.length; i++) {
+            closeButtons[i].onclick = function () {
+                var modal = this.parentElement.parentElement;
+                modal.style.display = "none";
+            }
+        }
+
+        window.onclick = function (event) {
+            var modals = document.getElementsByClassName("modal");
+            for (var i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 </body>
 </html>

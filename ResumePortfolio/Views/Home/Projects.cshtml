@@ -1,55 +1,93 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<!DOCTYPE html>
 <html>
 <head>
-    @Styles.Render("~/Content/Projects.css")
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .project-section {
+            margin-bottom: 30px;
+        }
+
+            .project-section img {
+                margin-right: 10px;
+            }
+
+            .project-section .buttons {
+                margin-top: 15px;
+            }
+
+        .line {
+            border-top: 1px solid #ddd;
+            margin: 30px 0;
+        }
+
+        @@media (max-width: 768px) {
+            .project-section .buttons {
+                position: static;
+                text-align: center;
+            }
+
+                .project-section .buttons .button {
+                    display: inline-block;
+                    margin: 5px 10px;
+                }
+        }
+    </style>
 </head>
 <body>
-    <div class="row">
-        <h1>My <span style="color:blue">Projects</span> </h1>
+    <div class="container">
+        <h1>My <span style="color:blue">Projects</span></h1>
         <div class="body-content">
-            <section class="col-md-6">
-                <h1><img src="~/Images/eMoneyLogo.png" width="70" height="70" /><span style="color:brown"></span></h1>
-                <div style="position: absolute; top: 180px; right:110px ">
-                    <button class="button">ASP.NET MVC</button>
-                    <button class="button">SQL</button>
+            <div class="project-section row">
+                <div class="col-md-12">
+                    <h1><img src="~/Images/eMoneyLogo.png" width="70" height="70" /><span style="color:brown"></span></h1>
+                    <div class="buttons">
+                        <button class="btn btn-primary button">ASP.NET MVC</button>
+                        <button class="btn btn-primary button">SQL</button>
+                    </div>
+                    <p style="font-size:medium; text-align:justify">
+                        eMoney is a comprehensive financial planning software designed to empower clients in achieving their financial goals. It facilitates planning, analysis, and decision-making, ensuring users navigate their financial journey with clarity and efficiency. As a member of the dedicated team handling Vault, a storage repository, we are responsible for its maintenance, ensuring reliability and resilience to protect the confidentiality of financial information.
+                    </p>
+                    <p><a class="btn btn-outline-dark" href="https://helpcenter.newedgeadvisors.com/s/article/emoney-platform-overview">eMoney Platform Overview &raquo;</a></p>
                 </div>
-                <p style="font-size:medium; text-align:justify">
-                    eMoney is a comprehensive financial planning software designed to empower clients in achieving their financial goals.It facilitates planning, analysis and decision-making ensuring users to navigate their financial journey with clarity and efficiency. As a member of the dedicated team handling Vault: a storage repository, we are responsible for its maintenance, ensuring reliability and resilience, to protect the confidentiality of financial information.
-                </p>
-                <p><a class="btn btn-outline-dark" href="https://helpcenter.newedgeadvisors.com/s/article/emoney-platform-overview">eMoney Platform Overview &raquo;</a></p>
-            </section>
+            </div>
             <div class="line"></div>
-            <section class="col-md-6">
-                <h1><img src="~/Images/Connexus.jpg" width="70" height="70" /><span style="color:brown"></span></h1>
-                <div style="position: absolute; top: 450px; right:100px ">
-                    <button class="button">WCF</button>
-                    <button class="button">WPF</button>
-                    <button class="button">REST API</button>
-                    <button class="button">WSDL</button>
-                    <button class="button">SQL</button>
+            <div class="project-section row">
+                <div class="col-md-12">
+                    <h1><img src="~/Images/Connexus.jpg" width="70" height="70" /><span style="color:brown"></span></h1>
+                    <div class="buttons">
+                        <button class="btn btn-primary button">WCF</button>
+                        <button class="btn btn-primary button">WPF</button>
+                        <button class="btn btn-primary button">REST API</button>
+                        <button class="btn btn-primary button">WSDL</button>
+                        <button class="btn btn-primary button">SQL</button>
+                    </div>
+                    <p style="font-size: medium; text-align:justify">
+                        Connexus is a WinForms desktop application utilized by Walmart Pharmacy for prescription processing. Developed using C# .NET, WCF (Windows Communication Foundation), ADO.NET, and SOAP services, Connexus streamlines the prescription management process, ensuring efficiency and accuracy in pharmacy operations. As a team, our focus on optimizing response time led us to implement parallel programming techniques in developing the REST APIs for Connexus. By leveraging parallel processing, we aimed to enhance the efficiency of data transfer and improve overall system performance.
+                    </p>
+                    <p><a class="btn btn-outline-dark" href="https://www.reddit.com/r/walmart_RX/comments/svv06o/connexus_walkthrough/">Connexus Application Overview &raquo;</a></p>
                 </div>
-                <p style="font-size: medium; text-align:justify">
-                    Connexus is a WinForms desktop application utilized by Walmart Pharmacy for prescription processing. Developed using C# .NET, WCF (Windows Communication Foundation), ADO.NET, and SOAP services, Connexus streamlines the prescription management process, ensuring efficiency and accuracy in pharmacy operations. As a team, our focus on optimizing response time led us to implement parallel programming techniques in developing the REST APIs for Connexus. By leveraging parallel processing, we aimed to enhance the efficiency of data transfer and improve overall system performance.
-                </p>
-                <p><a class="btn btn-outline-dark" href="https://www.reddit.com/r/walmart_RX/comments/svv06o/connexus_walkthrough/">Connexus Application Overview &raquo;</a></p>
-            </section>
+            </div>
             <div class="line"></div>
-            <section class="col-md-6">
-                <h1><img src="~/Images/eCartLogo.jpg" width="70" height="70" /><span style="color:brown"></span></h1>
-                <div style="position: absolute; top: 770px; right:100px ">
-                    <button class="button">HTML</button>
-                    <button class="button">CSS</button>
-                    <button class="button">Javascript</button>
-                    <button class="button">MVC</button>
-                    <button class="button">SQL</button>
+            <div class="project-section row">
+                <div class="col-md-12">
+                    <h1><img src="~/Images/eCartLogo.jpg" width="70" height="70" /><span style="color:brown"></span></h1>
+                    <div class="buttons">
+                        <button class="btn btn-primary button">HTML</button>
+                        <button class="btn btn-primary button">CSS</button>
+                        <button class="btn btn-primary button">Javascript</button>
+                        <button class="btn btn-primary button">MVC</button>
+                        <button class="btn btn-primary button">SQL</button>
+                    </div>
+                    <p style="font-size:medium; text-align:justify">
+                        eCart revolutionizes the shopping experience by offering a seamless, sustainable e-commerce platform. Developed on ASP.NET MVC with a robust backend SQL database utilizing Entity Framework, this application provides users with a simple yet powerful interface for managing items, navigating purchases, and generating orders effortlessly.
+                    </p>
+                    <p><a class="btn btn-outline-dark" href="https://github.com/ramyak457/ECart">Git Repo &raquo;</a></p>
                 </div>
-                <p style="font-size:medium; text-align:justify">
-                    eCart revolutionizes the shopping experience by offering a seamless, sustainable e-commerce platform. Developed on ASP.NET MVC with a robust backend SQL database utilizing Entity Framework, this application provides users with a simple yet powerful interface for managing items, navigating purchases, and generating orders effortlessly.
-                </p>
-                <p><a class="btn btn-outline-dark" href="https://github.com/ramyak457/ECart">Git Repo &raquo;</a></p>
-            </section>
+            </div>
             <div class="line"></div>
         </div>
     </div>
