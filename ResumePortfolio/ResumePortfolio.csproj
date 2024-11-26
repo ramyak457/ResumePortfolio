@@ -143,7 +143,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="Content\Projects.css" />
     <Content Include="Content\Technologies.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -166,7 +165,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Content\Skills.css" />
     <Content Include="Scripts\Skills.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
